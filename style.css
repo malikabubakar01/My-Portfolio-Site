@@ -1261,6 +1261,9 @@ button {
     padding-bottom: 10px;
    
 }
+.quick-links li{
+padding: 5px;
+}
 .copyright-text{
     color: #f5f5f5;
     font-weight: 200;
@@ -1310,7 +1313,7 @@ button {
 .portfolio-section {
 	padding-top: 120px;
 	padding-bottom: 80px;
-	background-color: #151515;
+	background-color: #000000;
 }
 .portfolio-section .section-header {
 	margin-left: auto;
@@ -1348,12 +1351,12 @@ button {
 	background: #FF4C0A;
 	background: -o-linear-gradient(
 		190deg,
-		#FF4C0A 0%,
+		#5b2511 0%,
 		#ff6600 100%
 	);
 	background: linear-gradient(
 		260deg,
-		#FF4C0A 0%,
+		#e0a894 0%,
 		#151515 100%
 	);
 	-webkit-transition: all 0.5s ease;
@@ -1361,7 +1364,7 @@ button {
 	transition: all 0.5s ease;
 }
 .portfolio-box {
-	padding-top: 50px;
+	padding-top: 60px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1397,7 +1400,7 @@ button {
 }
 .portfolio-box .portfolio-item {
     position: relative;
-	background-color: #f5f5f5;
+	background-color: #151515;
 	margin-bottom: 4%;
 	padding: 36px 36px 0 36px;
 	border-radius: 10px;
@@ -1414,14 +1417,15 @@ button {
 }
 .portfolio-box .content-box {
 	position: absolute;
-	bottom: 15px;
+	bottom: 10px;
 	left: 0;
 	background: #000;
 	width: calc(100% - 40px);
 	border-radius: 15px;
 	margin: 0 auto;
 	right: 0;
-	padding: 20px;
+	padding: 10px;
+    padding-top: 0;
 	padding-right: 50px;
 	opacity: 0;
 	visibility: hidden;
@@ -1434,13 +1438,13 @@ button {
 	background: #151515;
 	background: -o-linear-gradient(
 		190deg,
-		#FF4C0A 0%,
-		#151515 100%
+		#322825 0%,
+		#5b5b5b 100%
 	);
 	background: linear-gradient(
 		260deg,
-		#FF4C0A 0%,
-		#151515 100%
+		#e7482c 0%,
+		#e7482c 100%
 	);
 }
 .portfolio-box .portfolio-item:hover .content-box {
@@ -1451,11 +1455,11 @@ button {
 	transform: translateY(0);
 }
 .portfolio-box .portfolio-item .content-box .portfolio-title {
-	font-size: 30px;
+	font-size: 26px;
+font-weight: 600;
+    padding-top: 10px;
 }
-.portfolio-box .portfolio-item .content-box p {
-	margin-bottom: 0;
-}
+
 .portfolio-box .portfolio-item .content-box .portfolio-link {
 	position: absolute;
 	top: 0;
@@ -1468,7 +1472,7 @@ button {
 	padding: 0;
 }
 .portfolio-box .portfolio-item .content-box i {
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 1;
 	position: absolute;
 	top: 50%;
@@ -1483,10 +1487,39 @@ button {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
+    color: white;
 }
 .portfolio-box .portfolio-item:hover .content-box i {
 	-webkit-transform: translateY(-50%) rotate(360deg);
 	-ms-transform: translateY(-50%) rotate(360deg);
 	transform: translateY(-50%) rotate(360deg);
 }
+
 /*  END: Portfolio Section */
+
+
+.malik-abubakar{
+    background-color: #151515;
+    border-radius: 10px;
+    padding-top: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-box .portfolio-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .portfolio-box .portfolio-item {
+        width: 90%;
+        padding: 20px 20px 0 20px;
+    }
+    .portfolio-box{
+        justify-content: center;
+    }
+    .portfolio-box .portfolio-item .content-box .portfolio-title{
+
+        font-size: 16px;
+    }
+}
