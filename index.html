@@ -446,10 +446,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-header text-center">
-                            <h1 class="section-title wow fadeInUp" data-wow-delay=".3s">My Recent Works</h1>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">
-                                We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
-                            </p>
+                            <h1 class="section-title wow fadeInUp text-center pb-4" data-wow-delay=".3s">My Recent
+                                <span>Works</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">
+                                    We put your ideas and thus your wishes in the form of a unique web project that
+                                    inspires
+                                    you and
+                                    you customers.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -915,21 +919,57 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- footer end -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-        <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-        <script>
-            // Animation
-            AOS.init({
-                duration: 1200,
-            })
-            //Animation
-            document.addEventListener("DOMContentLoaded", function () {
-                const container = document.querySelector(".card-slider-main");
-                const leftButton = document.querySelector(".arrow-left");
-                const rightButton = document.querySelector(".arrow-right");
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Filter items on button click
+        $('.filter-button-group').on('click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            if (filterValue == "*") {
+                $('.portfolio-item').show();
+            } else {
+                $('.portfolio-item').hide();
+                $(filterValue).show();
+            }
+
+            // Update active class
+            $('.filter-button-group button').removeClass('active');
+            $(this).addClass('active');
+
+            // Filter animation
+            var active_bg = $(".portfolio-filter .button-group .active-bg");
+            var e = $(this);
+            var leftOff = e.offset().left;
+            var width = e.outerWidth();
+            var menuLeft = $(".portfolio-filter .button-group").offset().left;
+            active_bg.css({ left: leftOff - menuLeft + "px", width: width + "px" });
+        });
+
+        // Initialize the position of active-bg
+        var active_bg = $(".portfolio-filter .button-group .active-bg");
+        var element = $(".portfolio-filter .button-group .active");
+        var leftOff = element.offset().left;
+        var width = element.outerWidth();
+        var menuLeft = $(".portfolio-filter .button-group").offset().left;
+        active_bg.css({ left: leftOff - menuLeft + "px", width: width + "px" });
+    });
+</script>
+    <script>
+        // Animation
+        AOS.init({
+            duration: 1200,
+        })
+        //Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.querySelector(".card-slider-main");
+            const leftButton = document.querySelector(".arrow-left");
+            const rightButton = document.querySelector(".arrow-right");
 
                 function updateButtonState() {
                     leftButton.disabled = container.scrollLeft <= 0;
