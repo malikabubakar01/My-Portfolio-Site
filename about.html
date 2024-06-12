@@ -22,6 +22,12 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 
@@ -57,7 +63,7 @@
                             <a class="nav-link" aria-current="page" href="testimonial.html">Testimonials</a>
                         </li>
                     </ul>
-                    <button class="btn theme-btn" type="submit">Lets Talk</button>
+                    <button class="btn theme-btn" type="submit">Schedule Meeting</button>
 
                 </div>
             </div>
@@ -191,29 +197,29 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="prt_profile_slider">
                         <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <i class="fa fa-behance pl_clr1" aria-hidden="true"></i>
+                            <div class="item">  
+                                <i class="fa-brands fa-behance pl_clr1" aria-hidden="true"></i>
                                 <h4>Behance</h4>
                             </div>
                             <div class="item">
-                                <i class="fa fa-dribbble pl_clr2" aria-hidden="true"></i>
+                                <i class="fa-solid fa-basketball pl_clr2" aria-hidden="true"></i>
                                 <h4>Dribbble</h4>
                             </div>
                             <div class="item">
-                                <i class="fa fa-envira pl_clr3" aria-hidden="true"></i>
-                                <h4>envira</h4>
+                                <i class="fa-brands fa-envira pl_clr3" aria-hidden="true"></i>
+                                <h4>Envira</h4>
                             </div>
                             <div class="item">
-                                <i class="fa fa-behance pl_clr1" aria-hidden="true"></i>
+                                <i class="fa-brands fa-behance pl_clr1" aria-hidden="true"></i>
                                 <h4>Behance</h4>
                             </div>
                             <div class="item">
-                                <i class="fa fa-dribbble pl_clr2" aria-hidden="true"></i>
+                                <i class="fa-solid fa-basketball pl_clr2" aria-hidden="true"></i>
                                 <h4>Dribbble</h4>
                             </div>
                             <div class="item">
-                                <i class="fa fa-envira pl_clr3" aria-hidden="true"></i>
-                                <h4>envira</h4>
+                                <i class="fa-brands fa-envira pl_clr3" aria-hidden="true"></i>
+                                <h4>Envira</h4>
                             </div>
                         </div>
                     </div>
@@ -222,15 +228,11 @@
                     <div class="prt_heading_wrapper_2">
                         <div class="prt_heading">
                             <h1>PROFILES</h1>
-                            <p>WOrks At</p>
+                            <p>WORKS AT</p>
                         </div>
                     </div>
                     <div class="prt_profile_details">
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words which
-                            don't look even slightly believable. If you are going to use a passage of Lorem
-                            Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
-                            text. </p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
                     </div>
                 </div>
             </div>
@@ -634,6 +636,24 @@
         </div>
     </footer>
     <!-- footer end -->
+
+
+    <!-- Portfolio SLider JS COde -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:true,
+                items:3,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
