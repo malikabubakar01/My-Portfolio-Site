@@ -30,6 +30,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 
     <title>Page 1 - United</title>
@@ -93,8 +94,8 @@
                         </button>
                     </div>
                 </div>
-            </div>
-
+            </div>  
+            <!-- 
             <div class="postion-abs d-none d-lg-flex ">
                 <div class="scroll-line">
                     <p class="vertical-text">Scroll</p>
@@ -105,8 +106,7 @@
                     <div class="icon-img"><img src="images/Group 285.png" alt=""></div>
                     <div class="icon-img"><img src="images/Vector (1).png" alt=""></div>
                 </div>
-            </div>
-
+            </div> -->
         </div>
         <!-- banner section -->
 
@@ -119,23 +119,31 @@
                         <div class="">
                             <div class="hi-malik ">
                                 <span class="px-3">Hi, I am Malik Abubakar</span>
-                                <h1>Web Developer + <br>
-                                    UX Designer</h1>
+                                <h2 class="lh-sm">Web Developer + <br>
+                                    UX Designer</h2>
                             </div>
                         </div>
 
-                        <p class="mb-5 fs-4 lh-lg">I break down complex user experinece problems to create integritiy focussed
+                        <p class="mb-5 fs-4 lh-base">I break down complex user experinece problems to create integritiy focussed
                             solutions that
                             connect billions of people</p>
 
 
-                        <div class=" d-flex text-start">
-                            <a href="#" class="btn theme-btn me-3">Github</a>
-                            <a href="#" class="btn theme-btn">Learn More</a>
+                        <div class=" d-flex text-start gap-3 align-items-center ">
+                            <a href="#" class="btn theme-btn">Downlad CV</a>
+                            <div class="align-items-center">
+                                <div class="social-link justify-content-center ">
+                                    <a href="#" class="px-2"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="px-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="px-2"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"  class="px-2"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="malik-abubakar px-5    col-lg-5 col-md-8 col-sm-12 ">
+                <div class="malik-abubakar px-5    col-lg-5 col-md-8 col-sm-11 ">
                     <img class="img-fluid pt-5" src="images/Rectangle 5403.png" alt="">
                     <!-- <p>"Styles come and go. Good design is a language, not a style."</p> -->
                 </div>
@@ -436,20 +444,25 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-header text-center">
-                            <h1 class="section-title wow fadeInUp" data-wow-delay=".3s">My Recent Works</h2>
-                                <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    We put your ideas and thus your wishes in the form of a unique web project that
-                                    inspires
-                                    you and
-                                    you customers.
-                                </p>
+                            <h1 class="section-title wow fadeInUp" data-wow-delay=".3s">My Recent Works</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">
+                                We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                            </p>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-
+                        <div class="portfolio-filter text-center wow fadeInUp" data-wow-delay=".5s">
+                            <div class="button-group filter-button-group">
+                                <button data-filter="*" class="active">All</button>
+                                <button data-filter=".uxui">UX/UI</button>
+                                <button data-filter=".branding">Branding</button>
+                                <button data-filter=".mobile-app">Apps</button>
+                                <div class="active-bg"></div>
+                            </div>
+                        </div>
                         <div class="portfolio-box wow fadeInUp row gap-3" data-wow-delay=".6s">
                             <div class="portfolio-sizer col-lg-6 col-md-6 col-sm-12"></div>
                             <div class="gutter-sizer col-lg-6 col-md-6 col-sm-12"></div>
@@ -457,19 +470,13 @@
                                 <div class="image-box pt-4 pb-2">
                                     <img class="img-fluid" src="images/Portfolio images/22.png" alt="" />
                                 </div>
-                                <div class="content-box ">
-<<<<<<< HEAD
-                                    <h4 class="portfolio-title text-white">YCBA</h4>   
-                                    <p>Lorem ipsum dolor sit amet consectetur </p>
-                                     <a href="project-details.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-=======
+                                <div class="content-box">
                                     <h3 class="portfolio-title text-center">YCBA</h3>
                                     <a href="project-details.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
->>>>>>> 5952f3fd1727c8bd564127aa3e416e19261b7212
                                 </div>
                             </div>
                             <div class="portfolio-item uxui col-lg-6 col-md-6 col-sm-12">
-                                <div class="image-box  pt-4 pb-2">
+                                <div class="image-box pt-4 pb-2">
                                     <img class="img-fluid" src="images/Portfolio images/23.png" alt="" />
                                 </div>
                                 <div class="content-box">
@@ -485,7 +492,6 @@
                                 <div class="content-box">
                                     <h4 class="portfolio-title text-white">Villa Developers</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur </p>
-                                    <!-- <p>Villa Developers Building and transforming your dream villa into reality.</p> -->
                                     <a href="project-details.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                                 </div>
                             </div>
@@ -496,7 +502,6 @@
                                 <div class="content-box">
                                     <h4 class="portfolio-title text-white">Appointed LLC</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur </p>
-                                    <!-- <p>Appointed World Wide Holdings LLC offers tailored insurance solutions.</p> -->
                                     <a href="project-details.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                                 </div>
                             </div>
@@ -505,6 +510,7 @@
                 </div>
             </div>
         </section>
+
         <!-- PORTFOLIO SECTION END -->
 
 
@@ -983,6 +989,41 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Filter items on button click
+        $('.filter-button-group').on('click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            if (filterValue == "*") {
+                $('.portfolio-item').show();
+            } else {
+                $('.portfolio-item').hide();
+                $(filterValue).show();
+            }
+
+            // Update active class
+            $('.filter-button-group button').removeClass('active');
+            $(this).addClass('active');
+
+            // Filter animation
+            var active_bg = $(".portfolio-filter .button-group .active-bg");
+            var e = $(this);
+            var leftOff = e.offset().left;
+            var width = e.outerWidth();
+            var menuLeft = $(".portfolio-filter .button-group").offset().left;
+            active_bg.css({ left: leftOff - menuLeft + "px", width: width + "px" });
+        });
+
+        // Initialize the position of active-bg
+        var active_bg = $(".portfolio-filter .button-group .active-bg");
+        var element = $(".portfolio-filter .button-group .active");
+        var leftOff = element.offset().left;
+        var width = element.outerWidth();
+        var menuLeft = $(".portfolio-filter .button-group").offset().left;
+        active_bg.css({ left: leftOff - menuLeft + "px", width: width + "px" });
+    });
+</script>
     <script>
         // Animation
         AOS.init({
