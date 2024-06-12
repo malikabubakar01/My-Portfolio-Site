@@ -5,8 +5,11 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-}
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}  
 
 a,
 .nav-link {
@@ -29,7 +32,7 @@ h1 {
 }
 
 h3 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 20px;
     font-weight: 400;
     line-height: 40.2px;
@@ -40,7 +43,7 @@ h3 {
 }
 
 p {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -160,7 +163,7 @@ header,
 }
 
 .left-content-sec h2 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 72px;
     font-weight: 600;
     line-height: 90px;
@@ -170,7 +173,7 @@ header,
 }
 
 .right-content-sec p {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     color: #FFFFFF;
     font-size: 24.84px;
     font-weight: 400;
@@ -189,6 +192,17 @@ header,
 }
 
 /* query for banner section */
+.hi-malik span{
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    
+}
+.hi-malik h1{
+    font-size: 68px;
+    line-height: 1.4;
+    
+}
 
 @media only screen and (max-width: 1200px) {
     .left-content-sec h2 {
@@ -309,7 +323,7 @@ header,
 }
 
 .certified h3 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 20px;
     font-weight: 400;
     line-height: 40.2px;
@@ -360,7 +374,7 @@ span {
 }
 
 .fourth-mailk .fourth-sec .malik-abubakar p {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 20.84px;
     font-style: italic;
     font-weight: 300;
@@ -376,7 +390,7 @@ span {
 
 .fourth-mailk .fourth-sec .abubakar-content li {
     color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
@@ -838,7 +852,7 @@ button {
 
     .label-container h2 {
         color: #111;
-        font-family: Poppins, serif;
+        /* font-family: Poppins, serif; */
         margin-right: auto;
         font-size: 18px;
         font-weight: bold;
@@ -2084,4 +2098,112 @@ button {
 
         font-size: 16px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+/* New Testimonials */
+.testimonials-area {
+    position: relative;
+}
+
+.for-bgc-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-4, .col-lg-8 {
+    padding: 15px;
+}
+
+.col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.section-title h2 span {
+    color: #a3d9a5;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-arrows button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.testimonials-wrap {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.testimonial-item {
+    /* min-width: 100%; */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.testi-des h5 {
+    margin: 10px 0 5px;
+    color: #a3d9a5;
+}
+
+.testi-des span {
+    color: #ccc;
+}
+
+.bg-lines span {
+    display: block;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+        text-align: left;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+}
+/* New Testimonials End */
+>>>>>>> 5952f3fd1727c8bd564127aa3e416e19261b7212
