@@ -13,7 +13,7 @@ body {
 
 a,
 .nav-link {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 16px;
     font-weight: 400;
     line-height: 26.4px;
@@ -22,7 +22,7 @@ a,
 }
 
 h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h3 {
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Sora", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 40.2px;
@@ -43,7 +43,7 @@ h3 {
 }
 
 p {
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Sora", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -125,7 +125,7 @@ header,
 }
 
 .let-talk a {
-    font-family: "Inter", sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20.8px;
@@ -164,11 +164,11 @@ header,
 
 .left-content-sec h2 {
     /* font-family: "Poppins", sans-serif; */
-    font-size: 72px;
+    font-size: 38px;
+    text-align: center;
     font-weight: 600;
     line-height: 90px;
     letter-spacing: 0.05em;
-    text-align: left;
     color: #FFFFFF;
 }
 
@@ -238,19 +238,29 @@ header,
 
 @media only screen and (max-width: 478px) {
     .left-content-sec h2 {
-        font-size: 45px;
+        font-size: 40px;
         line-height: 1;
         margin-bottom: 20px;
     }
     .hi-malik h2{
-        font-size: 45px;
+        font-size: 40px;
         color: #fff;
+    }
+    .hi-malik span{
+        font-size: 24px;
     }
     .right-content-sec p {
         font-size: 16px;
         line-height: 2;
     }
+    .mob-img {
+        height: auto;
+        max-width: 70%;
+        margin-left: 40px !important;
+    }
 }
+
+
 
 .images-sec {
     overflow: hidden;
@@ -301,7 +311,7 @@ header,
 }
 
 .button-sec a {
-    font-family: "Inter", sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20.8px;
@@ -403,11 +413,17 @@ span {
     text-align: left;
 }
 
+.malik-form {
+    background-color: #313131;
+    padding: 14px;
+    border-radius: 10px;
+}
+
 .malik-abubakar {
     background-color: #313131;
     padding: 14px;
     border-radius: 10px;
-    transform: rotate(5deg);
+    transform: rotate(4deg);
     transition: 0.4s all ease;
 }
 .malik-abubakar:hover{
@@ -702,7 +718,7 @@ button {
     }
 
     .satisfied h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .portfolio-inner h1 {
@@ -724,6 +740,16 @@ button {
     width: 25rem;
 }
 
+.card-body {
+    /* background-color: #151515 !important; */
+    padding: 35px;
+}
+
+.card:hover {
+    border: 1px solid #ff6600;
+    background-color: #000000 !important;
+}
+
 @media only screen and (max-width: 431px) {
     .card {
         width: 100%;
@@ -738,9 +764,9 @@ button {
     gap: 10px;
 }
 
-.card-body {
+/* .card-body {
     padding: 35px;
-}
+} */
 
 .label-container {
     position: absolute;
@@ -819,7 +845,7 @@ button {
 .card-wrapper2 {
     transition: transform 0.3s ease-in-out;
     display: flex;
-    background: transparent;
+    background: #151515;
     justify-content: space-between;
     gap: 10px;
 }
@@ -1340,7 +1366,7 @@ button {
 }
 
 .what-if-port-details strong {
-    font-family: var(--ibm);
+    font-family: "Sora", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
@@ -1389,7 +1415,7 @@ button {
     }
 
     .what-if-port-details strong {
-        font-family: var(--ibm);
+        font-family: "Sora", sans-serif;
         font-size: 18px;
         font-weight: 500;
         line-height: 28px;
@@ -1478,8 +1504,9 @@ button {
 }
 
 .website-page-full-card {
-    background-color: transparent !important;
+    background-color: #151515 !important;
     color: #fff;
+    padding: 15px;
 }
 
 /* New footer */
@@ -1504,7 +1531,7 @@ button {
 }
 
 .social-link a i {
-    font-size: 16px;
+    font-size: 12px;
     transition: 0.4s all ease;
     color: white;
     border: 0.8px solid rgb(111, 109, 109);
@@ -1525,14 +1552,31 @@ button {
 
 .social-link .fa-facebook-f {
     padding: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.social-link .fa-instagram {
+    padding: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 .up-work a {
     background-color: #313132;
     padding: 20px;
     border-radius: 8px;
+}
+.banner-upwork {
+    background-color: #313132;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 12px;
+}
+
+.banner2-upwork{
+    background-color: #313132;
+    border-radius: 8px;
+    padding: 15px;
 }
 
 .form-control:focus {
@@ -1569,9 +1613,9 @@ button {
     border: none;
     color: white;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1;
-    padding: 12px 25px;
+    padding: 10px 15px;
     border-radius: 50px;
     z-index: 10;
     position: relative;
@@ -1706,6 +1750,78 @@ button {
 
 /*  END: Portfolio Section */
 
+/* Project Detial Page Project Info Card CSS  */
+.project-details-content {
+    background-color: #1b1b1b;
+}
+
+.project-info-content {
+    border-radius: 12px;
+    padding: 35px 40px;
+    background-color: #000000;
+    /* color: #fff; */
+}
+
+.info-title-main {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.project-info {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.project-info-box {
+    margin-bottom: 17px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.info-label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.info-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.info-title a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.info-title a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .project-info-content {
+        padding: 20px;
+    }
+    .text-wrapper-one {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-info-content {
+        margin-bottom: 30px;
+    }
+    .text-wrapper-one {
+        padding: 0;
+    }
+}
+/* Project Info Card CSS End */
 
 /*===============================
 *  START: Skills Section
@@ -1975,111 +2091,6 @@ button {
     }
 }
 
-
-/* New Testimonials */
-/* .testimonials-area {
-    position: relative;
-}
-
-.for-bgc-black {
-    background-color: #000;
-    color: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-lg-4, .col-lg-8 {
-    padding: 15px;
-}
-
-.col-lg-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-}
-
-.col-lg-8 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.section-title h2 span {
-    color: #a3d9a5;
-}
-
-.slider-arrows {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.slider-arrows button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.testimonials-wrap {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-.testimonial-item {
-    /* min-width: 100%;* 
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-}
-
-.author img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-}
-
-.testi-des h5 {
-    margin: 10px 0 5px;
-    color: #a3d9a5;
-}
-
-.testi-des span {
-    color: #ccc;
-}
-
-.bg-lines span {
-    display: block;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 10px 0;
-}
-
-@media (min-width: 768px) {
-    .col-lg-4 {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-        text-align: left;
-    }
-
-    .col-lg-8 {
-        flex: 0 0 66.6667%;
-        max-width: 66.6667%;
-    }
-}  */
-/* New Testimonials End */
-
 /* GPt Slider CSS */
 .testimonials-area {
     position: relative;
@@ -2189,9 +2200,6 @@ button {
         width: calc(200% * 0.5); /* width should account for 2 items per view */
     }
 }
-
-
-
 
 /* Card design CSS */
 .testimonials-area {
@@ -2343,4 +2351,34 @@ color: black;
     .testimonials-wrap {
         width: calc(200% * 0.5); /* width should account for 2 items per view */
     }
+}
+
+/* Project Detail banner Slider CSS */
+.myCarousel{
+    text-align: center !important;
+}
+.myCarousel {
+    width: 65%;
+
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+
+/* Project Detail images section */
+.image-section {
+    background-color: #1b1b1b;
+}
+
+.mob-img {
+    height: auto;
+    max-width: 70%;
+    margin-top: -20px;
+    margin-left: 75px;
+    margin-right: -30px;
 }
