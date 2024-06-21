@@ -11,6 +11,30 @@ body {
     font-style: normal;
 }  
 
+/* upper domain  */
+
+#upperButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#upperButton:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+}
+/* upper domain  */
+
+
 a,
 .nav-link {
     /* font-family: "Poppins", sans-serif; */
@@ -75,7 +99,7 @@ header,
 .navbar {
     background: #000000;
 }
-.navbar-brand{
+.navbar-brand , .footer-logo{
     width: 180px;
 }
 .nav-link:hover {
@@ -670,6 +694,25 @@ footer {
 .social-link :nth-child(4) {
     margin-right: 0;
 }
+.footer-inputfeild{
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #313132;
+    margin-right: 15px;
+    color: #fff !important;
+}
+
+.footer-inputfeild::placeholder{
+    color: #fff
+}
+.footer-inputfeild:focus{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #313131
+
+}
+
 
 /* ------ slider */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
@@ -740,11 +783,18 @@ button {
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: 25rem;
+    transition: 0.4s all ease;
+
 }
 
 .card-body {
     /* background-color: #151515 !important; */
     padding: 35px;
+}
+
+.call-free:hover{
+    border: 1px solid #ff6600;
+    background-color: #000000 !important;
 }
 
 .card:hover {
