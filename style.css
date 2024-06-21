@@ -75,7 +75,9 @@ header,
 .navbar {
     background: #000000;
 }
-
+.navbar-brand{
+    width: 180px;
+}
 .nav-link:hover {
     color: #FF4C0A;
 }
