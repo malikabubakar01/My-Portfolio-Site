@@ -32,11 +32,13 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
-    <title>Page 1 - United</title>
+    <title>Malik Abubakar Portfolio</title>
 </head>
 
 <body>
     <!-- Header  -->
+    <button id="upperButton" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
     <header>
         <nav class=" pt-4 pb-4 navbar navbar-expand-lg navbar-light ">
             <div class="container mx-5">
@@ -53,17 +55,21 @@
                             <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">My calendly</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="testimonial.html">Testimonials</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                        </li>
+
                     </ul>
                     <button class="btn theme-btn" type="submit">Schedule Meeting</button>
 
@@ -536,14 +542,31 @@
     <!-- footer -->
     <footer class="footer-area-6 footer-area-nine pt-lg-5 pb-lg-5">
         <div class="footer-area-top">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row footer-top gy-xl-0 gy-4">
-                    <div class="footer-1 col-lg-6 col-md-6 col-sm-12  px-5 pe-5 pb-2">
-                        <h4 class="footer-text">Subscribe to our newsletter to
-                            stay in touch with the latest</h4>
-                        <form class="input-append-button pt-4" action="#">
-                            <input class="form-control" type="text" placeholder="Your email here">
-                            <button class="arrow-btn" type="submit"><i class="arrow_right"></i></button>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="ml-65 text-start">
+
+                            <img src="images/Malik A/82.png" class="img-fluid footer-logo" alt="">
+                            <p class="mt-3 mb-3">Explore Malik Abubakar's portfolio, featuring expertise in Full Stack
+                                Web Development with JavaScript, PHP, React, and Node.js. Specializing in dynamic CMS
+                                solutions, Shopify apps, and WordPress plugins. Discover innovative projects showcasing
+                                creativity and technical proficiency.</p>
+                        </div>
+                    </div>
+                    <div class="footer-1 col-lg-4 col-md-6 col-sm-12">
+                        <h4 class="footer-text"> Quick Links</h4>
+                        <div class=" pt-2 pb-2">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li><a href="index.html">Home</a> </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="Portfolio.html">Portfolio</a></li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <form class="input-append-button pt-4 d-flex" action="#">
+                            <input class="form-control footer-inputfeild" type="email" placeholder="Your email here">
+                            <a href="" class="theme-btn border-0"> Submit</a>
                         </form>
                         <div class="up-work mt-3 mb-3 feedback_btn_group">
                             <a
@@ -552,24 +575,17 @@
                             <!-- <a href="#"><img src="img/home-nine/dribbble.png" alt=""></a> -->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="ml-65 text-center">
-                            <h4 class="footer-text">Quick Links</h4>
-                            <ul class="quick-links list-unstyled pt-4">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Work</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="case-study.html">Case Study</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class=" text-center">
-                            <h4 class="footer-text">Inquires</h4>
-                            <ul class="quick-links list-unstyled pt-4">
-                                <li><a href="mailto:mail@myfolio.com">malikabubakar@clancommunication</a></li>
-                                <li><a href="tel:3852852"> +92 343 4567890</a></li>
-                                <li><a href="#">sky_pe/rahmet</a></li>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="ml-65 text-start px-5">
+                            <h4 class="footer-text">Address</h4>
+                            <ul class="quick-links list-unstyled ">
+
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;&nbsp; 466
+                                        Abdul Haque Rd, Block G3 Phase 2 Johar Town, Lahore, Punjab 54000</a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;&nbsp;
+                                        info@malikabubakar.com </a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp; 0322 22278787
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
@@ -581,7 +597,8 @@
                 <div class="row align-items-center text-center">
                     <div class="col-lg-4 col-md-6 col-sm-12 text-md-start mt-3 mb-3">
                         <div class="copyright-text">
-                            &copy; 2024 malikabubakar - All right reserved
+                            <a href="#" class="text"> 2024 malikabubakar - All right reserved</a>
+
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 align-items-center mt-3 mb-3">
@@ -601,10 +618,35 @@
     </footer>
     <!-- footer end -->
 
-
     <!-- Portfolio SLider JS COde -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- upper button  -->
+    <script>
+        // Get the button
+        let upperButton = document.getElementById("upperButton");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                upperButton.style.display = "block";
+            } else {
+                upperButton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        upperButton.onclick = function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+    </script>
+    <!-- upper button  -->
+
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
