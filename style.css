@@ -1017,10 +1017,14 @@ button {
     justify-content: center;
     align-items: center;
 }
-/* slider  */
-.slick-slide {
+.slide img{
+    border-radius:20px;
+}
+.slide {
     margin: 0px 20px;
 }
+/* slider  */
+/* 
 
 .slick-slide img {
     width: 100%;
@@ -1111,7 +1115,7 @@ button {
 }
 .slick-arrow.slick-hidden {
     display: none;
-}   
+}    */
   /* slider */
 
 @media (max-width: 760px) {
@@ -2026,7 +2030,7 @@ button {
 
 .skills-widget .skill-item:hover .skill-inner {
     /* background-color: #fd9d2e90; */
-    border: 1px solid #f00;
+    border: 1px solid #FF4C0A;
 
 }
 
@@ -2295,20 +2299,6 @@ button {
     color: #a3d9a5;
 }
 
-.slider-arrows {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.slider-arrows button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
 .testimonials-wrap {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -2412,13 +2402,15 @@ button {
 }
 
 .slider-arrows button {
-    background-color: transparent;
+    background-color: #FF4C0A;
     border: none;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    padding: 10px;
+    border-radius:6px ;
+    transition: 0.4s all ease;
 }
-
 .testimonials-wrap {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -2514,7 +2506,15 @@ color: black;
     .testimonials-wrap {
         width: calc(200% * 0.5); /* width should account for 2 items per view */
     }
+  
 }
+
+@media (max-width: 768px) {
+    .client-testimonial{
+        flex-direction: column-reverse;
+    }
+}
+
 
 /* Project Detail banner Slider CSS */
 .myCarousel{
@@ -2551,6 +2551,7 @@ color: black;
 .about-area {
     position: relative;
     z-index: 1;
+    background-color: #151515;
 }
 
 .for-bgc-black {
