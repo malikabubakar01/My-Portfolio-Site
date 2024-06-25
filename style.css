@@ -2886,3 +2886,29 @@ color:#E7482C;
         visibility: visible;
     }
 }
+/* Popular Services CSS End */
+
+/* FAQs CSS Started */
+button.accordion-button.bg-dark.text-light {
+    box-shadow: none;
+    padding: 25px;
+}
+.accordion-item {
+    border: 1px solid tomato;
+}
+.accordion-button i{
+    position: absolute;
+    right: 20px;
+}
+
+.accordion-button[aria-expanded="true"] .fa-angle-down {
+    display: none;
+}
+
+.accordion-button[aria-expanded="false"] .fa-angle-up {
+    display: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: none;
+}
