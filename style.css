@@ -268,11 +268,14 @@ header,
 }
 
 @media only screen and (max-width: 478px) {
-    .navbar-brand , .footer-logo{
+    .navbar-brand {
         width: 100px;
         height: fit-content;
     }
-
+    .footer-logo{
+        width: 150px;
+        
+    }
     .left-content-sec h2 {
         font-size: 40px;
         line-height: 1;
@@ -2536,7 +2539,7 @@ color: black;
     text-align: center !important;
 }
 .myCarousel {
-    width: 65%;
+    width: 85%;
 
 }
 .carousel-inner img {
@@ -2837,7 +2840,7 @@ color:#E7482C;
 
 /* Popular Services CSS */
 .section-title {
-    text-align: center;
+    
     margin-bottom: 60px;
 }
 .section-title .sub-title {
@@ -2933,3 +2936,4 @@ button.accordion-button.bg-dark.text-light {
 .accordion-button:not(.collapsed)::after {
     display: none;
 }
+
