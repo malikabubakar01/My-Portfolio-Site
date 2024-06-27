@@ -1729,6 +1729,10 @@ button {
     border: 1px solid #151515;
 }
 
+.social-link a {
+    text-align: start;
+}
+
 .social-link a i {
     padding: 10px;
     background-color: #151515;
@@ -2937,3 +2941,48 @@ button.accordion-button.bg-dark.text-light {
     display: none;
 }
 
+/* Contact Form CSS */
+.social-icons {
+    display: flex;
+}
+
+.social-icons a i {
+    font-size: 12px;
+    transition: 0.4s all ease;
+    color: white;
+    border: 0.8px solid rgb(111, 109, 109);
+}
+
+.social-icons a i:hover {
+    color: #151515;
+    background-color: white;
+    border: 1px solid #151515;
+}
+
+.social-icons a {
+    text-align: start;
+}
+
+.social-icons a i {
+    padding: 10px;
+    background-color: #151515;
+    border-radius: 50%;
+
+}
+
+.social-icons .fa-facebook-f {
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.social-icons .fa-instagram {
+    padding: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.contact-page-form {
+    padding: 20px;
+    background-color: #151515;
+    border-radius: 20px;
+}
