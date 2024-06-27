@@ -175,7 +175,6 @@ header,
 }
 
 .banner {
-
     position: relative;
 }
 
@@ -274,7 +273,7 @@ header,
     }
     .footer-logo{
         width: 150px;
-        
+
     }
     .left-content-sec h2 {
         font-size: 40px;
@@ -301,8 +300,6 @@ header,
     font-size: 20px !important;
     }
 }
-
-
 
 .images-sec {
     overflow: hidden;
@@ -2891,6 +2888,9 @@ color:#E7482C;
 }
 .service-item .details-btn i {
     font-size: 24px;
+}
+.time-clock{
+    width: 100px;
 }
 .fadeInUp {
     animation-name: fadeInUp;
